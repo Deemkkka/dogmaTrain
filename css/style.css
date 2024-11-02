@@ -1,0 +1,138 @@
+html{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1780px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body{
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    /* color: #fff; */
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.header{
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header__phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: right;
+    font-weight: 600;
+    color: #E9E9E9;
+}
+
+.btn__like{
+    padding: 23px;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+}
+
+.btn__order{
+    width: 222px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    color: #E9E9E9;
+}
+
+.burger-label{
+    position: relative;
+    height: 64px;
+    width: 70px;
+    border: 1px  solid #E9E9E9;
+    border-radius: 5px;
+}
+
+#burger-toggle{
+    display: none;
+}
+
+.burger-label span,
+.burger-label::after{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #E9E9E9;
+    transition: all .5s;
+}
+
+.burger-label span{
+    top: 29px;
+    left: 20px;
+}
+ 
+.burger-label::after{
+    content: '';
+    top: 35px;
+    left: 20px;
+}
+
+#burger-toggle:checked ~ .burger-label span{
+    transform: rotate(45deg);
+    top: 30px;
+}
+
+#burger-toggle:checked ~ .burger-label::after{
+    transform: rotate(-45deg);
+    top: 29px;
+}
+
+
+
+.main{
+    flex-grow: 1;
+}
+
+.footer{
+    height: 200px;
+    background-color: black;
+}

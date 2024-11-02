@@ -50,9 +50,56 @@
     </div>
     </header>
     <main class="main">
-      <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore excepturi tempora amet deserunt quibusdam beatae numquam labore, dolorem blanditiis, consectetur laborum adipisci totam suscipit sunt doloribus modi atque corporis dolores?
-      </div>
+      <section class="top">
+        <div class="container">
+          <div class="top__inner">
+            <div class="text__inner">
+              <h1 class="top__title">Бизнес-класс</h1>
+              <h2 class="top__subtitle">в центре Краснодара</h2>
+            </div>
+            <div class="filters__inner">
+              <div class="rooms">
+                <p class="rooms__title">Количество комнат</p>
+                <div class="rooms__btn">
+                  <button class="room__btn-item" data-rooms="studio">Студия</button>
+                  <button class="room__btn-item" data-rooms="1">1</button>
+                  <button class="room__btn-item" data-rooms="2">2</button>
+                  <button class="room__btn-item" data-rooms="3">3</button>
+                  <button class="room__btn-item" data-rooms="4">4</button>
+                </div>
+              </div>
+              <div class="square">
+                <p class="square__title">Общая площадь м2</p>
+                <div class="square__inner">
+                  <div class="square-item">
+                    <label for="square-min">от</label>
+                    <input class="square-min" type="number" value="2" min="2">
+                  </div>
+                  <div class="separator">—</div>
+                  <div class="square-item">
+                    <label for="square-max">до</label>
+                    <input class="square-max" type="number" value="4" min="2">
+                  </div>
+                </div>
+              </div>
+              <div class="floor">
+                <p class="floor__title">Этаж</p>
+                <div class="floor__inner">
+                  <div class="floor-item">
+                    <label for="floor-min">от</label>
+                    <input class="floor-min" type="number" value="2" min="2">
+                  </div>
+                  <div class="separator">—</div>
+                  <div class="floor-item">
+                    <label for="floor-max">до</label>
+                    <input class="floor-max" type="number" value="4" min="2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer"></footer>
   </div>

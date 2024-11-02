@@ -31,7 +31,7 @@ body{
     font-family: "Manrope", sans-serif;
     font-weight: 500;
     line-height: 1.4;
-    /* color: #fff; */
+    color: #fff;
 }
 
 a{
@@ -45,7 +45,9 @@ button{
 }
 
 .header{
-
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .nav{
@@ -71,7 +73,7 @@ button{
 }
 
 .btn__like{
-    padding: 23px;
+    padding: 0 23px;
     border: 1px solid #E9E9E9;
     border-radius: 5px;
 }
@@ -126,11 +128,51 @@ button{
     top: 29px;
 }
 
-
-
 .main{
     flex-grow: 1;
 }
+
+.top{
+    background-image: url(../images/top-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+
+.text__inner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top__title{
+    font-size: 150px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 1535px;
+}
+
+.top__subtitle{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+
+
+
+
+
 
 .footer{
     height: 200px;
